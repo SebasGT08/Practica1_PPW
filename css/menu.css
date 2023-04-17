@@ -2,6 +2,7 @@ nav {
     background-color: #7c7878;
     box-shadow: 0 2px 3px rgba(0,0,0,0.1);
   }
+
   
   nav ul {
     list-style: none;
@@ -19,6 +20,8 @@ nav {
     padding: 10px;
     text-decoration: none;
     color: #333;
+    font-size: 20px; /* Cambia el tamaño de la letra a 18 píxeles */
+    font-family: "Arial", sans-serif; /* Cambia la fuente a Arial o a otra fuente sans-serif */
   }
   
   nav a:hover {
@@ -51,4 +54,10 @@ nav {
     margin: 0;
     border-radius: 3px;
   }
+
+  nav {
+    display: flex;
+    width: 100%;
+  }
+
   
