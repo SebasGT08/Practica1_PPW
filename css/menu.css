@@ -11,7 +11,7 @@ body {
   color: #fff;
 }
 
-nav {
+.main-nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -20,33 +20,33 @@ nav {
   padding-left: 2vw;
 }
 
-nav .cont-ul {
+.main-nav .cont-ul {
   display: flex;
   align-items: center;
 }
 
-nav li {
+.main-nav li {
   list-style: none;
   cursor: pointer;
   padding: 1.5vw;
   transition:  all .3s ease 0s;
 }
 
-nav li:hover {
+.main-nav li:hover {
   background-color: #008849;
 }
 
-nav .submenu {
+.main-nav .submenu {
   position: relative;
 }
 
-nav .ul-second {
+.main-nav .ul-second {
   display: none;
   position: absolute;
   margin-top: 1.5vw;
 }
 
-nav .ul-second > li {
+.main-nav .ul-second > li {
   width: 190px;
   transform: translateX(-20px);
   border-bottom:solid 1px #fff ;
@@ -54,15 +54,15 @@ nav .ul-second > li {
   background-color: #24252a;
 }
 
-nav .ul-second > li:hover {
+.main-nav .ul-second > li:hover {
   background-color: #008849;
 }
 
-nav .submenu:hover > .ul-second {
+.main-nav .submenu:hover > .ul-second {
   display: block;
 }
 
-nav .ul-third {
+.main-nav .ul-third {
   position: absolute;
   transform: translateX(100%);
   right: 0;
@@ -71,16 +71,16 @@ nav .ul-third {
   background-color: #24252a;
 }
 
-nav .ul-third > li {
+.main-nav .ul-third > li {
   padding: 1.5vw;
   border-bottom: solid 1px #fff;
 }
 
-nav .front:hover > .ul-third {
+.main-nav .front:hover > .ul-third {
   display: block;
 }
 
-nav a {
+.main-nav a {
   color: white;
   text-decoration: none;
 }
