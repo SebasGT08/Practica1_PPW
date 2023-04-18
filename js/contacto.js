@@ -1,55 +1,55 @@
-// Obtener el formulario
-const form = document.getElementById("contact-form");
+function validateForm() {
+  const nameInput = document.getElementById("name");
+  const numberInput = document.getElementById("numberS");
+  const correoInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
 
-// Agregar un escucha para el evento "submit"
-form.addEventListener("submit", function(event) {
-  // Detener el envío del formulario
-  event.preventDefault();
-
-  // Validar los campos del formulario
-  if (!validateName() || !validateEmail() || !validateMessage()) {
-    return;
-  }
-});
-
-function validateName() {
-  const nameInput = form.name;
-  const name = nameInput.value.trim();
-
-  if (name === "") {
+  // Validar nombre
+  if (nameInput.value.trim().length < 3) {
     nameInput.classList.add("is-invalid");
+    nameInput.parentElement.querySelector(".error-feedback").style.display = "block";
     return false;
   } else {
     nameInput.classList.remove("is-invalid");
-    return true;
+    nameInput.parentElement.querySelector(".error-feedback").style.display = "none";
   }
-}
 
-function validateEmail() {
-  const emailInput = form.email;
-  const email = emailInput.value.trim();
-
-  // Expresión regular para validar el formato del correo electrónico
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (email === "" || !emailRegex.test(email)) {
-    emailInput.classList.add("is-invalid");
+  // Validar número de celular
+  if (!/^\d{10}$/.test(numberInput.value)) {
+    numberInput.classList.add("is-invalid");
+    numberInput.parentElement.querySelector(".error-feedback").style.display = "block";
     return false;
   } else {
-    emailInput.classList.remove("is-invalid");
-    return true;
+    numberInput.classList.remove("is-invalid");
+    numberInput.parentElement.querySelector(".error-feedback").style.display = "none";
   }
-}
 
-function validateMessage() {
-  const messageInput = form.message;
-  const message = messageInput.value.trim();
+  // Validar correo electrónico
+  if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/.test(correoInput.value)) {
+    correoInput.classList.add("is-invalid");
+    correoInput.parentElement.querySelector(".error-feedback").style.display = "block";
+    return false;
+  } else {
+    correoInput.classList.remove("is-invalid");
+    correoInput.parentElement.querySelector(".error-feedback").style.display = "none";
+  }
+  
 
-  if (message === "") {
+  // Validar mensaje
+  if (messageInput.value.trim().length < 5) {
     messageInput.classList.add("is-invalid");
+    messageInput.parentElement.querySelector(".error-feedback").style.display = "block";
     return false;
   } else {
     messageInput.classList.remove("is-invalid");
-    return true;
+    messageInput.parentElement.querySelector(".error-feedback").style.display = "none";
   }
+
+  alert("Formulario Enviado\n\n" +
+  "Nombre: " + nameInput.value + "\n" +
+  "Celular: " + numberInput.value + "\n" +
+  "Correo: " + correoInput.value + "\n" +
+  "Mensaje: " + messageInput.value);
+
+  return true;
 }

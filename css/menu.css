@@ -27,7 +27,7 @@ body {
 
 .main-nav li {
   list-style: none;
-  cursor: pointer;
+  
   padding: 1.5vw;
   transition:  all .3s ease 0s;
 }
@@ -83,4 +83,5 @@ body {
 .main-nav a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }

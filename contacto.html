@@ -8,7 +8,7 @@
     
     <link rel='stylesheet' type='text/css' href='css/contacto.css'>
     <link rel="stylesheet" href="css/menu.css">
-   
+    <script src="js/contacto.js"></script>
 </head>
 <body>
 
@@ -20,7 +20,7 @@
       <li class="submenu">
         <a href="#">INFORMACIÓN</a>
         <ul class="ul-second">
-          <li><a href="estandareaHTML.html" class="back">Introducción Estándares HTML</a></li>
+          <li><a href="estandareaHTML.html" class="back">Introducción Estándares HTML</li></a>
           <li><a href="pagina2.html">Estructura Página web</a></li>
           <li><a href="componentesEslementos.html">Componentes/elementos HTML</a></li> 
           <li><a href="componentesEslementos.html">Estilos CSS, definición de elementos</a></li>
@@ -34,45 +34,31 @@
   </nav>
   <!-- ***** -->
 
+  <form class="contact-form" action="" method="POST" onsubmit="return validateForm()">
+    <h1>FORMULARIO</h1>
+    <p>Ingrese la informacion para que podamos resolver sus dudas:</p>
 
-    
-
-      <form class="contact-form" action="" method="POST">
-        <h1>FORMULARIO</h1>
-        <p>Ingrese la informacion para que podamos resolver sus dudas:</p>
-
-        <div class="form-group">
-          <label for="name">NOMBRE:</label> <br>
-          <input type="text" class="form-control" id="name" name="name" required>
-          <div class="invalid-feedback">Por favor, ingrese su nombre</div>
-        </div>
-        <div class="form-group">
-          <label for="numberS">Celular:</label> <br>
-          <input type="text" class="form-control" id="numberS" name="numberS" required>
-          <div class="invalid-feedback">Por favor, ingrese su numero de celular</div>
-        </div>
-        <div class="form-group">
-          <label for="email">CORREO ELECTRÓNICO:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-          <div class="invalid-feedback">Por favor, ingrese un correo electrónico válido</div>
-        </div>
-        <div class="form-group">
-          <label for="message">MENSAJE:</label>
-          <textarea class="form-control" id="message" name="message" required></textarea>
-          <div class="invalid-feedback">Por favor, ingrese su mensaje</div>
-        </div>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-
-
-
-    
-
-
-
-
-
-    
-
+    <div class="form-group">
+      <label for="name">NOMBRE:</label> <br>
+      <input type="text" class="form-control" id="name" name="name" required>
+      <div class="error-feedback" style="display: none;">Por favor, ingrese un nombre válido (mínimo 3 caracteres)</div>
+    </div>
+    <div class="form-group">
+      <label for="numberS">Celular:</label> <br>
+      <input type="text" class="form-control" id="numberS" name="numberS" required>
+      <div class="error-feedback" style="display: none;">Por favor, ingrese un número de celular válido (deben ser 10 dígitos)</div>
+    </div>
+    <div class="form-group">
+      <label for="email">CORREO ELECTRÓNICO:</label>
+      <input type="text" class="form-control" id="email" name="email" required>
+      <div class="error-feedback" style="display: none;">Por favor, ingrese un correo electrónico válido</div>
+    </div>
+    <div class="form-group">
+      <label for="message">MENSAJE:</label>
+      <textarea class="form-control" id="message" name="message" required></textarea>
+      <div class="error-feedback" style="display: none;">Por favor, ingrese mensaje válido (mínimo 5 dígitos)</div>
+    </div>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
 </body>
 </html>
