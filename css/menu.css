@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-color: #a9aaac;
+  background : url('../img/fondo.jpg');
   color: #fff;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .main-nav li:hover {
-  background-color: #008849;
+  background-color: #005688;
 }
 
 .main-nav .submenu {
@@ -55,7 +55,7 @@ body {
 }
 
 .main-nav .ul-second > li:hover {
-  background-color: #008849;
+  background-color: #005688;
 }
 
 .main-nav .submenu:hover > .ul-second {
