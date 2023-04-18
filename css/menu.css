@@ -1,63 +1,86 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #a9aaac;
+  color: #fff;
+}
+
 nav {
-    background-color: #7c7878;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24252a;
+  padding-left: 2vw;
+}
 
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    position: relative;
-  }
-  
-  nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 20px; /* Cambia el tamaño de la letra a 18 píxeles */
-    font-family: "Arial", sans-serif; /* Cambia la fuente a Arial o a otra fuente sans-serif */
-  }
-  
-  nav a:hover {
-    background-color: #f5f5f5;
-  }
-  
-  nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-    border-radius: 0 0 3px 3px;
-  }
-  
-  nav ul li:hover > ul {
-    display: inherit;
-  }
-  
-  nav ul ul li {
-    position: relative;
-  }
-  
-  nav ul ul ul {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
-  }
+nav .cont-ul {
+  display: flex;
+  align-items: center;
+}
 
-  nav {
-    display: flex;
-    width: 100%;
-  }
+nav li {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.5vw;
+  transition:  all .3s ease 0s;
+}
 
-  
+nav li:hover {
+  background-color: #008849;
+}
+
+nav .submenu {
+  position: relative;
+}
+
+nav .ul-second {
+  display: none;
+  position: absolute;
+  margin-top: 1.5vw;
+}
+
+nav .ul-second > li {
+  width: 190px;
+  transform: translateX(-20px);
+  border-bottom:solid 1px #fff ;
+  text-align: center;
+  background-color: #24252a;
+}
+
+nav .ul-second > li:hover {
+  background-color: #008849;
+}
+
+nav .submenu:hover > .ul-second {
+  display: block;
+}
+
+nav .ul-third {
+  position: absolute;
+  transform: translateX(100%);
+  right: 0;
+  top: 40%;
+  display: none;
+  background-color: #24252a;
+}
+
+nav .ul-third > li {
+  padding: 1.5vw;
+  border-bottom: solid 1px #fff;
+}
+
+nav .front:hover > .ul-third {
+  display: block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
