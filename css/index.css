@@ -1,0 +1,116 @@
+
+  /* Estilos para el contenedor */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffffd7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  /* Estilos para el título */
+  .container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 20px;
+    padding: 10px;
+    background-color: #005688;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slide-down 0.5s ease-out;
+  }
+  
+  /* Estilos para el subtítulo */
+  .container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b547e;
+    margin: 20px 0 10px;
+  }
+
+  .container h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b547e;
+    margin: 20px 0 10px;
+  }
+  
+  
+  /* Estilos para la lista */
+  .container ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .container li {
+    margin-bottom: 10px;
+    color: #111531;
+    font-size: 17px;
+    font-weight: 600;  
+  }
+  
+  /* Estilos para los enlaces */
+  
+
+  .container2 ul {
+    list-style: circle;
+    
+  }
+  
+  .container2 li {
+    margin: 10px 10px;
+  }
+  
+  .logo1 {
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .logo2 {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .enlace{
+    text-align: center;
+    background: #5f8fac79;
+
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .container .enlace {
+    transition: background 0.5s ease-out;
+  }
+  
+  .container  .enlace:hover {
+    background: #16406d;
+  }
+
+
+  /* Animaciones */
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
