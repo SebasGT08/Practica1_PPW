@@ -140,44 +140,7 @@ pre .valor{
 
 
 
-  .container3 {
-    width: 100%;
-    background: #587aad88;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(103, 89, 180, 0.842);
-  }
-
-  .cont-int{
-    border: solid black 1px;
-    padding: 20px;
-    text-align: center;
-}
-.container3 textarea{
-    padding: 10px;
-    display: block;
-    outline: none;
-    min-width: 250px;
-    max-width: 1200px;
-    max-height: 70vh;
-    min-height: 20vh;
-    font-size: 14px;
-  }
-  .btns{
-      padding: 10px 0;
-  }
-  .btns button{
-      padding: 2px 5px;
-      margin-left: 5px;
-      border:  #797979 solid 1px;
-      cursor: pointer;
-  }
-  .btns button a{
-      text-decoration: none;
-      color: #000;
-  }
+  
 
   /* Animaciones */
   @keyframes slide-down {

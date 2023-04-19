@@ -16,23 +16,23 @@
     text-align: center;
     margin: 0 0 20px;
     padding: 10px;
-    background-color: #005688;
+    background-color: #857620;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(35, 50, 211, 0.61);
+    box-shadow: 0 0 10px rgba(192, 181, 28, 0.61);
     animation: slide-down 0.5s ease-out;
 }
 
 .container p{
     font-size: 20px;
     font-weight: bold;
-    color: #0b4c6ee3;
+    color: #857620;
     margin: 20px 0 10px;
     text-align: justify;
 }
 
   .container2 {
     width: 100%;
-    background: #424d5e88;
+    background: #97863a88;
     margin: auto;
     margin-top: 20px;
     padding: 20px;
@@ -45,8 +45,8 @@
 }
 
 .cabecera .titulo{
-    color: #005688;
-    font-weight: 900;
+    color: #8d8404;
+    font-weight: 1000;
 }
 
 .cabecera .texto1{
@@ -60,15 +60,16 @@
     font-weight: 800; 
 }
 
-.cabecera a{
-    color: #036aa1e3;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 800; 
+.contenido p{
+  color: #ffffffe3;
 }
 
-
+.contenido a{
+    color: #e0b803e3;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800; 
+}
 
 .codigo{
     width: 40%;
@@ -119,7 +120,7 @@ pre .valor{
 
   .enlace{
     text-align: center;
-    background: #5f8fac79;
+    background: #b3a84aaf;
 
     margin-left: 40%;
     margin-right: 40%;
@@ -130,54 +131,16 @@ pre .valor{
   }
   
   .container  .enlace:hover {
-    background: #16406d;
+    background: #a3940cb7;
   }
 
   .contAux{
     text-align:center;
-    color: #16406d;
+    color: #a3940c;
+
   }
 
 
-
-  .container3 {
-    width: 100%;
-    background: #587aad88;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(103, 89, 180, 0.842);
-  }
-
-  .cont-int{
-    border: solid black 1px;
-    padding: 20px;
-    text-align: center;
-}
-.container3 textarea{
-    padding: 10px;
-    display: block;
-    outline: none;
-    min-width: 250px;
-    max-width: 1200px;
-    max-height: 70vh;
-    min-height: 20vh;
-    font-size: 14px;
-  }
-  .btns{
-      padding: 10px 0;
-  }
-  .btns button{
-      padding: 2px 5px;
-      margin-left: 5px;
-      border:  #797979 solid 1px;
-      cursor: pointer;
-  }
-  .btns button a{
-      text-decoration: none;
-      color: #000;
-  }
 
   /* Animaciones */
   @keyframes slide-down {

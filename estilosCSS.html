@@ -4,8 +4,11 @@
     <meta charset='utf-8'>
     <title>Estilos para CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <link id="menu-1" rel="stylesheet" href="css/menu.css">
+    <link id="menu-2" rel="stylesheet" href="css/menu2.css" disabled>
+    <link id="hoja-estilo-1" rel="stylesheet" href="css/estiloGeneral.css">
+    <link id="hoja-estilo-2" rel="stylesheet" href="css/estiloGeneral2.css" disabled>
+    <script src="js/cambiarEstilo.js"></script>
 </head>
 
 <body>
@@ -28,6 +31,7 @@
       </ul>
     </li>
     <li><a href="contacto.html">CONTACTO</a></li>
+    <li><button onclick="cambiarHojaEstilo()">Cambiar estilo</button></li>
   </ul>
 </nav>
 <!-- ***** -->
@@ -108,18 +112,6 @@
 </div>
 
 
-<div class="container3">
- <h2>Cambiar Estilo</h2>
-
- 
-   <button>Cambiar</button>
-
-  <script src="js/cambiarEstilo.js"></script>
-
-
- </button>
-
-</div>
      
     
 </body>
