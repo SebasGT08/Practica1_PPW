@@ -1,0 +1,21 @@
+.esta1 h1{
+   
+ color: #ffffff;
+ text-align: center;
+ padding: 10px;
+ background-color: #dbc230;
+ border-radius: 5px;
+ font-size: 30px;
+ box-shadow: 0 0 12px rgba(81, 92, 207, 0.849);
+
+}
+
+.Estandares {
+    width: 100%;
+    background: #424d5e88;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(169, 173, 196, 0.719);
+  }
