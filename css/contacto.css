@@ -15,7 +15,7 @@
   margin-bottom: 20px;
 }
 
-label {
+.contact-form label {
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -68,12 +68,12 @@ textarea:focus {
   background-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
-h1{
+.contact-form h1{
   text-align: center;
   font-weight: 800;
 
 }
-p{
+.contact-form p{
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
