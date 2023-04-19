@@ -183,8 +183,8 @@ pre .valor{
   input:focus,
   textarea:focus {
     outline: none;
-    border-color: #5b65f8;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.521);
+    border-color: #d4c70e;
+    box-shadow: 0 0 0 4px rgba(230, 189, 10, 0.521);
   }
     
   .btn {
@@ -209,7 +209,7 @@ pre .valor{
   
   .btn:focus{
     color: #fff;
-    background-color: #007bff;
+    background-color: #ad8f0a;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
   }
   .contact-form h1{
