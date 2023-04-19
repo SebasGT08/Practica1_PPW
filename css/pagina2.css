@@ -1,69 +1,76 @@
 
-.container-titulo{
-    max-width: 1050px;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 10px;
-    background-color: #ffffffc9;
-    border-radius: 5px;
-    box-shadow: 0 0 20px #005688;
-    animation: fade-in 0.5s ease-out;
-}
 
-.container-titulo h1{
-    color: #005688;
-    font-weight: 900;
-}
 
 .container {
     max-width: 1050px;
     margin: 0 auto;
     margin-top: 10px;
     padding: 50px;
-    background-color: #2223254b;
+    background-color: #ffffffa4;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.637);
-    animation: fade-in 0.5s ease-out;
   }
 
-.container  p {
-    font-size: 16px;
-    line-height: 1.5;
+  .container h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    background-color: #005688;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 0 0 12px rgba(81, 92, 207, 0.849);
+}
+
+  .intro {
+    width: 100%;
+    background: #424d5e88;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(50, 66, 156, 0.719);
+  }
+
+  .doc {
+    width: 100%;
+    background: #424d5e88;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(169, 173, 196, 0.719);
+  }
+
+.intro  p {
+    font-size: 14px;
+    font-weight: 600; 
     margin-bottom: 20px;
     text-align: justify;
+    line-height: 1.5;
 }
 
-.container ol {
+.doc ol {
     margin-left: 30px;
 }
 
-.container li ul {
-    list-style: disc;
+.doc li ul {
     margin-left: 30px;
 }
 
-.container li ul li {
-    list-style: circle;
-}
 
-.container li {
-    font-family: Arial, sans-serif;
+.doc li {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
     text-align: justify;
+    font-weight: 600; 
 }
 
-.container h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 
 .container h2 {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 25x;
+    color: #ffffff;
     font-weight: bold;
     margin-bottom: 10px;
+    font-weight: 900; 
 }
