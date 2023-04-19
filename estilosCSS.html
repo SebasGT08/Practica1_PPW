@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Estilos para CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/estilosCSS.css">
+</head>
+
+<body>
+
+ <!-- MENU DE NAVEGACION -->
+ <nav class="main-nav">
+  <p>Práctica - Estandares HTML</p>
+  <ul class="cont-ul">
+    <li><a href="index.html">INICIO</a></li>
+    <li class="submenu">
+      <a href="#">INFORMACIÓN</a>
+      <ul class="ul-second">
+        <li><a href="estandareaHTML.html" class="back">Introducción Estándares HTML</a></li>
+        <li><a href="pagina2.html">Estructura Página web</a></li>
+        <li><a href="componentesEslementos.html">Componentes/elementos HTML</a></li> 
+        <li><a href="componentesEslementos.html">Estilos CSS, definición de elementos</a></li>
+        <li><a href="principalesFuncionesJS.html">Funciones de JS</a></li>
+        <li><a href="principalesFuncionesJS.html">Validadores de estándares HTML</a></li>
+
+      </ul>
+    </li>
+    <li><a href="contacto.html">CONTACTO</a></li>
+  </ul>
+</nav>
+<!-- ***** -->
+
+<div class="container">
+
+
+        <h1>Principales estilos para CSS y la definición de elementos</h1>
+        <p>
+            CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir cómo se presenta un documento HTML. CSS se utiliza para definir la apariencia visual de los elementos HTML en una página web.
+        </p>
+        <div class="container2">
+          <h3>Los principales estilos de CSS incluyen:</h3>
+          <hr>
+          
+
+          <div class="cabecera">
+          <span class="titulo">Selector de Elemento:</span> <span class="texto1">Es el estilo predeterminado de CSS y se aplica a todos los elementos en una página web. Por ejemplo:</span> 
+          </div>
+          <div class="codigo">
+            <pre>
+              <span class="etiqueta">body</span> {
+                <span class="propiedad">background-color</span>: <span class="valor">#FFFFFF</span>;
+                <span class="propiedad">font-family</span>: <span class="valor">Arial, sans-serif</span>;
+              }
+              </pre>
+          </div>
+
+          <hr>
+
+          <div class="cabecera">
+            <span class="titulo">Selector de ID:</span> <span class="texto1">Se utiliza para aplicar estilos a elementos HTML que tienen un atributo de identificación único. Por ejemplo:</span> 
+            </div>
+            <div class="codigo">
+              <pre>
+                <span class="etiqueta">#header</span> {
+                  <span class="propiedad">background-color</span>: <span class="valor">#333333</span>;
+                  <span class="propiedad">color</span>: <span class="valor">#FFFFFF</span>;
+                  <span class="propiedad">font-size</span>: <span class="valor">24px</span>;
+                }
+                </pre>
+          </div>
+
+          <hr>
+
+          <div class="cabecera">
+            <span class="titulo">Selector de Clase:</span> <span class="texto1">Se utiliza para aplicar estilos a elementos HTML que tienen una clase específica. Por ejemplo:</span> 
+            </div>
+            <div class="codigo">
+              <pre>
+                <span class="etiqueta">.button</span> {
+                  <span class="propiedad">background-color</span>: <span class="valor">#007FFF</span>;
+                  <span class="propiedad">color</span>: <span class="valor">#FFFFFF</span>;
+                  <span class="propiedad">padding</span>: <span class="valor">10px 20px</span>;
+                }
+                </pre>
+          </div>
+
+          <hr>
+
+          <div class="cabecera">
+            <span class="titulo">Selector de Atributo: </span> <span class="texto1">Se utiliza para aplicar estilos a elementos HTML que tienen un atributo específico. Por ejemplo:</span> 
+            </div>
+            <div class="codigo">
+              <pre>
+                <span class="etiqueta">input[type="text"]</span> {
+                  <span class="propiedad">input</span>: <span class="valor">#007FFF</span>;
+                  <span class="propiedad">border</span>: <span class="valor">1px solid #CCCCCC</span>;
+                  <span class="propiedad">padding</span>: <span class="valor">5px</span>;
+                }
+                </pre>
+          </div>
+
+
+
+        </div>
+        
+</div>
+     
+    
+</body>
+</html>
