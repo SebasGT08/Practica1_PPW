@@ -98,3 +98,11 @@ pre .propiedad{
 pre .valor{
     color:rgb(89, 172, 6);
 }
+
+.container2 li{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-align: justify;
+    font-weight: 600; 
+}
