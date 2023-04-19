@@ -106,3 +106,54 @@ pre .valor{
     text-align: justify;
     font-weight: 600; 
 }
+
+.logo1 {
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .logo2 {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .enlace{
+    text-align: center;
+    background: #5f8fac79;
+
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .container .enlace {
+    transition: background 0.5s ease-out;
+  }
+  
+  .container  .enlace:hover {
+    background: #16406d;
+  }
+
+  .contAux{
+    text-align:center;
+    color: #16406d;
+  }
+
+
+  /* Animaciones */
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
