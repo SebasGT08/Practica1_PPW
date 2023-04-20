@@ -1,7 +1,7 @@
 .container {
     max-width: 1050px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 70px;
     padding: 50px;
     background-color: #ffffffa4;
     border-radius: 5px;
@@ -161,7 +161,7 @@ pre .valor{
     min-width: 300px;
     background: #424d5e69;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 20px;
     color: #ffffff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.637);
