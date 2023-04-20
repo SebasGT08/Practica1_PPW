@@ -264,38 +264,39 @@ pre .valor{
   }
 
 
-  .fondo-animado {
+  .esfera, .esfera-dos {
+    width: 60px;
+    height: 60px;
+    background-color: #9c9e22;
+    box-shadow: 0 0 0 2px rgba(215, 217, 223, 0.63);
+    border-radius: 50%;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     z-index: -1;
   }
-  
-  .destello {
-    position: relative;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    animation: destello 2s ease-in-out infinite;
-  }
-  
-  @keyframes destello {
-    0% {
-      opacity: 0;
+
+  @keyframes rebote {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(calc(100vw - 60px), 0);
     }
     50% {
-      opacity: 1;
+      transform: translate(calc(100vw - 60px), calc(100vh - 120px));
     }
-    100% {
-      opacity: 0;
+    75% {
+      transform: translate(0, calc(100vh - 120px));
     }
+  }
+  
+  .esfera {
+    animation: rebote 5s ease-in-out infinite;
+  }
+  
+  .esfera-dos {
+    animation: rebote 5s ease-in-out infinite;
+    animation-delay: 1.4s;
+    transform: translate(calc(-100vw + 30px), calc(-100vh + 30px));
   }
 
  

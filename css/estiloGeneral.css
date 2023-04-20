@@ -272,9 +272,10 @@ pre .valor{
 
 
   .esfera, .esfera-dos {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: #1d4a8f;
+    box-shadow: 0 0 0 2px rgba(215, 217, 223, 0.63);
     border-radius: 50%;
     position: fixed;
     z-index: -1;
@@ -285,30 +286,27 @@ pre .valor{
       transform: translate(0, 0);
     }
     25% {
-      transform: translate(calc(100vw - 30px), 0);
+      transform: translate(calc(100vw - 60px), 0);
     }
     50% {
-      transform: translate(calc(100vw - 30px), calc(100vh - 30px));
+      transform: translate(calc(100vw - 60px), calc(100vh - 120px));
     }
     75% {
-      transform: translate(0, calc(100vh - 30px));
+      transform: translate(0, calc(100vh - 120px));
     }
   }
   
   .esfera {
-    animation: rebote 6s ease-in-out infinite;
+    animation: rebote 5s ease-in-out infinite;
   }
   
   .esfera-dos {
-    animation: rebote 6s ease-in-out infinite;
-    animation-delay: 1s; /* Retraso de 3 segundos para que la segunda esfera comience después de la primera */
-    transform: translate(calc(-100vw + 30px), calc(-100vh + 30px)); /* Posiciona la segunda esfera en el lado opuesto */
+    animation: rebote 5s ease-in-out infinite;
+    animation-delay: 1.4s;
+    transform: translate(calc(-100vw + 30px), calc(-100vh + 30px));
   }
 
-  .esfera .esfera-dos{
-    z-index: -1;
-  }
-  
+
 
   
 
