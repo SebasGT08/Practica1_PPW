@@ -294,3 +294,12 @@ pre .valor{
     }
   }
 
+  .container2 {
+    text-indent: 0; /* establece el valor inicial en 0 */
+    transition: text-indent 0.5s ease-in-out; /* agrega una transición a la propiedad text-indent */
+  }
+  
+  .container2:hover {
+    text-indent: 50px; /* establece el valor final al hacer hover en el párrafo */
+  }
+
